@@ -81,7 +81,7 @@ POST /graphql
 }
 ```
 
-Karema dokumen dengan ID yang diberikan dihapus tanpa sebarang pemeriksaan
+Karena dokumen dengan ID yang diberikan dihapus tanpa sebarang pemeriksaan
 izin lebih jauh, seorang pengguna mungkin bisa menghapus dokumen milik
 pengguna lain.
 
