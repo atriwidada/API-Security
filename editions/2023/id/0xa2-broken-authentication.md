@@ -13,9 +13,9 @@ yang sama dengan mekanisme otentikasi.
 
 Suatu API rentan bila itu:
 
-* Mengizinkan credential stuffing dimana penyerang memakai brute force
+* Mengizinkan _credential stuffing_ dimana penyerang memakai _brute force_
   dengan suatu daftar nama pengguna yang valid dan kata sandi.
-* Mengizinkan penyerang melakukan suatu serangan brute force pada akun 
+* Mengizinkan penyerang melakukan suatu serangan _brute force_ pada akun 
   pengguna yang sama tanpa menyajikan captcha/mekanisme penguncian akun.
 * Mengizinkan kata sandi yang lemah.
 * Mengirim rincian otentikasi sensitif, seperti misalnya token auth dan kata
