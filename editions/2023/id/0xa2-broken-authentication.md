@@ -59,7 +59,7 @@ dipakai dalam permintaan-permintaan selanjutnya untuk mengidentifikasi
 pengguna. Percobaan log masuk dikenai pembatasan laju yang restriktif:
 hanya tiga permintaan yang diizinkan per menit.
 
-Untuk melakukan brute force log masuk dengan suatu akun korban, aktor jahat
+Untuk melakukan _brute force_ log masuk dengan suatu akun korban, aktor jahat
 memanfaatkan batch kuiri GraphQL untuk melewati pembatasan laju permintaan,
 mempercepat serangan:
 
@@ -102,19 +102,18 @@ memperbarui alamat surel dari akun pengguna.
 * Jangan mencipta ulang dalam otentikasi, pembangkitan token, atau penyimpanan
   kata sandi. Gunakan standar. 
 * Pemulihan kredensial/lupa kata sandi titik akhir mesti diperlakukan sebagai
-  log masuk titik akhir dari sudut pandang brute force, pembatasan laju, dan 
+  log masuk titik akhir dari sudut pandang _brute force_, pembatasan laju, dan 
   proteksi penguncian.
 * Persyaratkan otentikasi ulang untuk operasi sensitif (mis. mengubah alamat
   surel akun/nomor telepon 2FA).
 * Gunakan [OWASP Authentication Cheatsheet][1].
-* Gunakan[OWASP Authentication Cheatsheet][1].
 * Bila memungkinkan, implementasikan otentikasi multi faktor.
-* Implementasikan mekanisme anti brute force untuk memitigasi credential
-  stuffing, dictionary attack, dan serangan brute force pada titik akhir
+* Implementasikan mekanisme anti _brute force_ untuk memitigasi _credential
+  stuffing_, _dictionary attack_, dan serangan _brute force_ pada titik akhir
   otentikasi Anda. Mekanisme ini mesti lebih ketat dari pada mekanisme
   pembatasan laju yang bisa pada API Anda.
 * Implementasikan mekanisme [penguncian akun][2]/captcha untuk mencegah
-  serangan brute force terhadap pengguna tertentu. Implementasikan pemeriksaan
+  serangan _brute force_ terhadap pengguna tertentu. Implementasikan pemeriksaan
   kata sandi lemah.
 * Kunci API tidak boleh dipakai untuk otentikasi pengguna. Mereka hanya boleh
   dipakai untuk otentikasi  [klien API][3].
