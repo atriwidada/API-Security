@@ -94,27 +94,30 @@ memperbarui alamat surel dari akun pengguna.
 
 ## Bagaimana Cara Mencegah?
 
-* Make sure you know all the possible flows to authenticate to the API
-  (mobile/ web/deep links that implement one-click authentication/etc.). Ask
-  your engineers what flows you missed.
-* Read about your authentication mechanisms. Make sure you understand what and
-  how they are used. OAuth is not authentication, and neither are API keys.
-* Don't reinvent the wheel in authentication, token generation, or password
-  storage. Use the standards.
-* Credential recovery/forgot password endpoints should be treated as login
-  endpoints in terms of brute force, rate limiting, and lockout protections.
-* Require re-authentication for sensitive operations (e.g. changing the account
-  owner email address/2FA phone number).
-* Use the [OWASP Authentication Cheatsheet][1].
-* Where possible, implement multi-factor authentication.
-* Implement anti-brute force mechanisms to mitigate credential stuffing,
-  dictionary attacks, and brute force attacks on your authentication endpoints.
-  This mechanism should be stricter than the regular rate limiting mechanisms
-  on your APIs.
-* Implement [account lockout][2]/captcha mechanisms to prevent brute force
-  attacks against specific users. Implement weak-password checks.
-* API keys should not be used for user authentication. They should only be used
-  for [API clients][3] authentication.
+* Pastikan bahwa Anda tahu semua alur yang mungkin untuk mengotentikasi ke
+  API (mobile/web/taut dalam yang mengimplementasikan otentikasi satu klik/
+  dsb.) Tanyakan ke pengembang Anda alur apa yang kurang.
+* Baca tentang mekanisme otentikasi Anda. Pastikan Anda paham apa dan bagaimana
+  mereka dipakai. OAuth itu bukan otentikasi, dan kunci API juga buka.
+* Jangan mencipta ulang dalam otentikasi, pembangkitan token, atau penyimpanan
+  kata sandi. Gunakan standar. 
+* Pemulihan kredensial/lupa kata sandi titik akhir mesti diperlakukan sebagai
+  log masuk titik akhir dari sudut pandang brute force, pembatasan laju, dan 
+  proteksi penguncian.
+* Persyaratkan otentikasi ulang untuk operasi sensitif (mis. mengubah alamat
+  surel akun/nomor telepon 2FA).
+* Gunakan [OWASP Authentication Cheatsheet][1].
+* Gunakan[OWASP Authentication Cheatsheet][1].
+* Bila memungkinkan, implementasikan otentikasi multi faktor.
+* Implementasikan mekanisme anti brute force untuk memitigasi credential
+  stuffing, dictionary attack, dan serangan brute force pada titik akhir
+  otentikasi Anda. Mekanisme ini mesti lebih ketat dari pada mekanisme
+  pembatasan laju yang bisa pada API Anda.
+* Implementasikan mekanisme [penguncian akun][2]/captcha untuk mencegah
+  serangan brute force terhadap pengguna tertentu. Implementasikan pemeriksaan
+  kata sandi lemah.
+* Kunci API tidak boleh dipakai untuk otentikasi pengguna. Mereka hanya boleh
+  dipakai untuk otentikasi  [klien API][3].
 
 ## Referensi
 
