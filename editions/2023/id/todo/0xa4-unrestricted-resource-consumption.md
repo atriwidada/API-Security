@@ -3,7 +3,6 @@
 | Agen ancaman/Vektor serangan | Kelemahan Keamanan | Impak |
 | - | - | - |
 | Spesifik API : Eksploitabilitas **Rata-rata** | Prevalensi **Menyebar Luas** : Keterdeteksian **Mudah** | Teknis **Sangat Parah** : Spesifik Bisnis |
-
 | Eksploatasi memerlukan permintaan-permintaan API yang sederhana. Beberapa permintaan bersamaan dapat dilakukan dari sebuah komputer lokal atau memakai sumber daya komputasi cloud. Kebanyakan perkakas terotomasi yang tersedia dirancang untuk menyebabkan DoS lewat lalu litasn beban tinggi, berdampak ke laju layanan API. | Umum untuk menemukan API yang tidak membatasi interaksi klien atau konsumsi sumber daya. Permintaan API yang disusun, seperti yang menyertakan parameter yang mengendalikan banyaknya sumber daya yang dikembalikan dan melakukan analisis status/waktu/panjang respons mestinya mengizinkan identifikasi masalah-masalah tersebut. Hal yang sama valid untuk operasi batch. Walaupun agen ancaman tidak punya visibilitas atas impak biaya, ini dapat disimpulkan berdasarkan model bisnis/penetapan harga penyedia layanan (mis. penyedia layanan cloud). | Eksploitasi bisa mengarah ke DoS karena habisnya sumber daya, tapi itu juga bisa mengarah ke kenaikan biaya operasional seperti yang terkait ke infrastruktur karena tuntutan CPU yang lebih tinggi, meningkatnya kebutuhan penyimpanan cloud, dsb. |
 
 ## Is the API Vulnerable?
