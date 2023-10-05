@@ -3,7 +3,7 @@
 | Agen ancaman/Vektor serangan | Kelemahan Keamanan | Impak |
 | - | - | - |
 | Spesifik API : Eksploitabilitas **Rata-rata** | Prevalensi **Menyebar Luas** : Keterdeteksian **Mudah** | Teknis **Sangat Parah** : Spesifik Bisnis |
-| Eksploatasi memerlukan permintaan-permintaan API yang sederhana. Beberapa permintaan bersamaan dapat dilakukan dari sebuah komputer lokal atau memakai sumber daya komputasi cloud. Kebanyakan perkakas terotomasi yang tersedia dirancang untuk menyebabkan DoS lewat lalu litasn beban tinggi, berdampak ke laju layanan API. | Umum untuk menemukan API yang tidak membatasi interaksi klien atau konsumsi sumber daya. Permintaan API yang disusun, seperti yang menyertakan parameter yang mengendalikan banyaknya sumber daya yang dikembalikan dan melakukan analisis status/waktu/panjang respons mestinya mengizinkan identifikasi masalah-masalah tersebut. Hal yang sama valid untuk operasi batch. Walaupun agen ancaman tidak punya visibilitas atas impak biaya, ini dapat disimpulkan berdasarkan model bisnis/penetapan harga penyedia layanan (mis. penyedia layanan cloud). | Eksploitasi bisa mengarah ke DoS karena habisnya sumber daya, tapi itu juga bisa mengarah ke kenaikan biaya operasional seperti yang terkait ke infrastruktur karena tuntutan CPU yang lebih tinggi, meningkatnya kebutuhan penyimpanan cloud, dsb. |
+| Eksploitasi memerlukan permintaan-permintaan API yang sederhana. Beberapa permintaan bersamaan dapat dilakukan dari sebuah komputer lokal atau memakai sumber daya komputasi cloud. Kebanyakan perkakas terotomasi yang tersedia dirancang untuk menyebabkan DoS lewat lalu lintas dengan beban tinggi, berdampak ke laju layanan API. | Umum untuk menemukan API yang tidak membatasi interaksi klien atau konsumsi sumber daya. Permintaan API yang disusun, seperti yang menyertakan parameter yang mengendalikan banyaknya sumber daya yang dikembalikan dan melakukan analisis status/waktu/panjang respons mestinya mengizinkan identifikasi masalah-masalah tersebut. Hal yang sama valid untuk operasi batch. Walaupun agen ancaman tidak punya visibilitas atas impak biaya, ini dapat disimpulkan berdasarkan model bisnis/penetapan harga penyedia layanan (mis. penyedia layanan cloud). | Eksploitasi bisa mengarah ke DoS karena habisnya sumber daya, tapi itu juga bisa mengarah ke kenaikan biaya operasional seperti yang terkait ke infrastruktur karena tuntutan CPU yang lebih tinggi, meningkatnya kebutuhan penyimpanan cloud, dsb. |
 
 ## Apakah API Rentan?
 
@@ -64,7 +64,7 @@ Penyedia pihak ketiga, Willyo, mengutip $0,05 per pemanggilan tipe ini.
 
 Seorang penyerang menulis sebuah skrip yang mengirim pemanggilan API pertama
 puluhan ribu kali. Back-end mengikuti dan meminta Willyo untuk mengirim
-puluhan ribu pesan teks, membuat perusahaan kehilahan ribuan dolar hanya
+puluhan ribu pesan teks, membuat perusahaan kehilangan ribuan dolar hanya
 dalam waktu beberapa menit.
 
 ### Skenario #2
@@ -108,7 +108,7 @@ POST /graphql
 ```
 
 Karena API tidak membatasi berapa kali operasi `uploadPic` dapat dicoba, 
-pemanggilan akan mengarah ke habisnya memori server dan Penyangkalan Layanan.
+pemanggilan akan membawa ke habisnya memori server dan Penyangkalan Layanan.
 
 ### Skenario #3
 
@@ -136,7 +136,7 @@ tagihan bulanan berikutnya naik dari US$13, secara rata-rata, menjadi US$8k.
 * Implementasikan suatu batas tentang seberapa sering suatu klien dapat
   berinteraksi dengan API dalam rentang waktu yang didefinisikan (pembatasan
   laju).
-* Pembatasan lajut mesti disetel berdasarkan pada kebutuhan bisnis. Beberapa
+* Pembatasan laju mesti disetel berdasarkan pada kebutuhan bisnis. Beberapa
   Titik Akhir API mungkin memerlukan kebijakan yang lebih ketat.
 * Batasi/rem berapa kali atau seberapa sering suatu klien/pengguna API dapat
   mengeksekusi sebuah operasi (mis. memvalidasi suatu OTP, atau meminta 
