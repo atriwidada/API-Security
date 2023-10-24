@@ -3,7 +3,6 @@
 | Agen ancaman/Vektor serangan | Kelemahan Keamanan | Impak |
 | - | - | - |
 | Spesifik API : Eksploitabilitas **Mudah** | Prevalensi **Menyebar Luas** : Keterdeteksian **Rata-rata** | Teknis **Sedang** : Spesifik Bisnis |
-
 | Eksploitasi biasanya melibatkan model bisnis yang didukung oleh API tersebut, menemukan alur-alur bisnis sensitif, dan mengotomasi akses ke alur-alur ini, menyebabkan cedera ke bisnis. | Kurangnya pandangan holistik dari API tersebut untuk mendukung sepenuhnya persyaratan bisnis cenderung berkontribusi ke prevalensi dari masalah ini. Penyerang secara manual mengidentifikasi sumber daya apa (mis. titik akhir) yang terlibat dalam alur kerja target dan bagaimana mereka bekerja bersama. Bila mekanisme mitigasi sudah ditempatkan, penyerang perlu mencari suatu cara untuk melewati mereka. | Secara umum dampak teknis tidak diharapkan. Eksploitasi mungkin mencederai bisnis dalam cara-cara yang berbeda, sebagai contoh: mencegah pengguna sah untuk membeli suatu produk, atau mengarah ke inflasi dalam ekonomi internal dari suatu permainan. |
 
 ## Apakah API Rentan?
