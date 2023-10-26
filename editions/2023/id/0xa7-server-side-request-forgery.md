@@ -1,17 +1,17 @@
-# API7:2023 Server Side Request Forgery
+# API7:2023 Pemalsuan Permintaan Sisi Server
 
 | Agen ancaman/Vektor serangan | Kelemahan Keamanan | Impak |
 | - | - | - |
 | Spesifik API : Eksploitabilitas **Mudah** | Prevalensi **Umum** : Keterdeteksian **Mudah** | Teknis **Sedang** : Spesifik Bisnis |
-| Eksploitasi memerlukan penyerang menemukan suatu titik akhir API yang mengakses sebuah URI yang disediakan oleh klien. Secara umum, SSRF dasar (ketika respens dikembalikan ke penyerang), lebih mudah dieksploitasi daripada SSRF Buta dimana penyerang tidak mendapatkan umpan balik atas apakah serangan berhasil atau tidak. | Konsep modern dalam pengembangan aplikasi mendorong pengembang untuk mengakses URI yang disediakan oleh klien. Ketiadaan atau tidak tepatnya validasi dari URI semacam itu adalah masalah yang umum. Anaisis permintaan dan respons API reguler akan diperlukan untuk mendeteksi masalah. Ketika respons tidak dikembalikan (SSRF Buta) mendeteksi kerentanan memerlukan kreativitas dan upaya lebih. | Eksploitasi yang berhasil dapat mengarah ke enumerasi layanan internal (mis: pemindaian port), pengungkapan informasi, melewati firewall, atau mekanisme keamanan lain. Dalam beberapa kasus, itu dapat mengarah ke DoS atau server dipakai sebagai suatu proksi untuk menyembunyikan aktivitas jahat. |
+| Eksploitasi memerlukan penyerang menemukan suatu titik akhir API yang mengakses sebuah URI yang disediakan oleh klien. Secara umum, SSRF dasar (ketika respons dikembalikan ke penyerang), lebih mudah dieksploitasi daripada SSRF Buta dimana penyerang tidak mendapatkan umpan balik atas apakah serangan berhasil atau tidak. | Konsep modern dalam pengembangan aplikasi mendorong pengembang untuk mengakses URI yang disediakan oleh klien. Ketiadaan atau tidak tepatnya validasi dari URI semacam itu adalah masalah yang umum. Anaisis permintaan dan respons API reguler akan diperlukan untuk mendeteksi masalah. Ketika respons tidak dikembalikan (SSRF Buta) mendeteksi kerentanan memerlukan kreativitas dan upaya lebih. | Eksploitasi yang berhasil dapat mengarah ke enumerasi layanan internal (mis: pemindaian port), pengungkapan informasi, melewati firewall, atau mekanisme keamanan lain. Dalam beberapa kasus, itu dapat mengarah ke DoS atau server dipakai sebagai suatu proksi untuk menyembunyikan aktivitas jahat. |
 
 ## Apakah API Rentan?
 
-Cacat Server-Side Request Forgery (SSRF) terjadi ketika suatu API mengambil
-sebuah sumber daya remote tanpa memvalidasi URL yang diberikan oleh pengguna.
-Itu memungkinkan seorang penyerang memaksa aplikasi untuk mengirim suatu
-permintaan yang disusun ke sebuah tujuan yang tidak diharapkan, bahkan ketika
-dilindungi oleh sebuah firewall atau VPN.
+Cacat Pemalsuan Permintaan Sisi Server (Server-Side Request Forgery/SSRF) 
+terjadi ketika suatu API mengambil sebuah sumber daya remote tanpa memvalidasi
+URL yang diberikan oleh pengguna. Itu memungkinkan seorang penyerang memaksa
+aplikasi untuk mengirim suatu permintaan yang disusun ke sebuah tujuan yang
+tidak diharapkan, bahkan ketika dilindungi oleh sebuah firewall atau VPN.
 
 Konsep modern dalam pengembangan aplikasi membuat SSRF lebih umum dan lebih
 berbahaya.
