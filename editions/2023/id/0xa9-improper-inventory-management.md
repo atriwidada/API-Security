@@ -3,7 +3,7 @@
 | Agen ancaman/Vektor serangan | Kelemahan Keamanan | Impak |
 | - | - | - |
 | Spesifik API : Eksploitabilitas **Mudah** | Prevalensi **Menyebar Luas** : Keterdeteksian **Rata-rata** | Teknis **Sedang** : Spesifik Bisnis |
-| Agen ancaman biasanya mendapatkan akses tanpa otorisasi melalui versi API lama atau titik akhir yang dibiarkan berjalan tanpa di-patch dan memakai persyaratan keamanan yang lebih lemah. Dalam beberapa kasus, eksploit tersedia. Sebagai alternatif, mereka bisa mendapatkan akses ke data sensitif melalui pihak ketiga yang mestinya tidak ada alasan untuk berbagi data. | Dokumentasi yang kedaluwarsa membuat jadi lebih sulit untuk mencari dan/atau memperbaiki kerentanan. Ketiadaan inventaris aset dan strategi pensiun membawa ke menjalankan sistem yang tidak di-patch, menyebabkan kebocoran data sensitif. Umum untuk menemukan host API yang secara tidak perlu terekspos karena konsep modern seperti microservice, yang membuat aplikasi mudah digelar dan independen (mis. cloud computing, K8S). Google Dorking sederhana, enumerasi DNS, atau memakai mesin pencari terspesialisasi untuk berbagai tipe server (webcam, router, server, dsb) yang tersambung ke internet akan cukup untuk menemukan target. | Penyerang dapat memperoleh akses ke data sensitif, atau bahkan mengambil alih server. Terkadang versi/penggelaran API yang berbeda tersambung ke basis data yang sama dengan data riil. Agen ancaman mungkin mengeksploitasi titik akhir yang tidak dipakai lagi, yang tersedia dalam versi API lama, untuk memperoleh akses ke fungsi-fungsi administratif atau mengeksplotasi kerentanan yang diketahui. |
+| Agen ancaman biasanya mendapatkan akses tanpa otorisasi melalui versi API lama atau titik akhir yang dibiarkan berjalan tanpa di-patch dan memakai persyaratan keamanan yang lebih lemah. Dalam beberapa kasus, eksploit tersedia. Sebagai alternatif, mereka mungkin mendapatkan akses ke data sensitif melalui pihak ketiga yang mestinya tidak ada alasan untuk berbagi data dengan mereka. | Dokumentasi yang kedaluwarsa membuat jadi lebih sulit untuk mencari dan/atau memperbaiki kerentanan. Ketiadaan inventaris aset dan strategi pensiun membawa ke menjalankan sistem yang tidak di-patch, menyebabkan kebocoran data sensitif. Umum untuk menemukan host API yang secara tidak perlu terekspos karena konsep modern seperti microservice, yang membuat aplikasi mudah digelar dan independen (mis. cloud computing, K8S). Google Dorking sederhana, enumerasi DNS, atau memakai mesin pencari terspesialisasi untuk berbagai tipe server (webcam, router, server, dsb) yang tersambung ke internet akan cukup untuk menemukan target. | Penyerang dapat memperoleh akses ke data sensitif, atau bahkan mengambil alih server. Terkadang versi/penggelaran API yang berbeda tersambung ke basis data yang sama dengan data riil. Agen ancaman mungkin mengeksploitasi titik akhir yang tidak dipakai lagi, yang tersedia dalam versi API lama, untuk memperoleh akses ke fungsi-fungsi administratif atau mengeksplotasi kerentanan yang diketahui. |
 
 ## Apakah API Rentan?
 
@@ -94,9 +94,9 @@ Belakangan, firma konsultan menjual informasi tersebut untuk tujuan jahat.
   keamanan yang sama dengan produksi.
 * Ketika versi lebih baru dari API menyertakan perbaikan keamanan, lakukan
   suatu analisis risiko untuk menginformasikan aksi mitigasi yang diperlukan
-  bagi versi-versi lebih lama. Sebagai contoh, apakah mungkin untuk mem-
-  backport perbaikan tanpa merusak kompatibilitas API atau apakah Anda perlu
-  mematikan versi yang lebih lama dengan cepat dan memaksa semua klien
+  bagi versi-versi lebih lama. Sebagai contoh, apakah mungkin untuk 
+  mem-backport perbaikan tanpa merusak kompatibilitas API atau apakah Anda
+  perlu mematikan versi yang lebih lama dengan cepat dan memaksa semua klien
   berpindah ke versi terakhir.
 
 ## Referensi
