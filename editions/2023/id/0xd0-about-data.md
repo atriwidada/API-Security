@@ -21,10 +21,10 @@ lebih sadar dan tetap waspada atasnya.
 
 ## Metodologi
 
-Dalam fase pertama, data yang tersedia secara publik tentang insiden-
-insiden keamanan API dikumpulkan, ditinjau, dan dikategorikan. Data seperti
-itu dikumpulkan dari platform-platform bug bounty dan laporan-laporan yang
-tersedia secara publik. Hanya masalah-masalah yang dilaporkan antara 2019
+Dalam fase pertama, data yang tersedia secara publik tentang
+insiden-insiden keamanan API dikumpulkan, ditinjau, dan dikategorikan. Data
+seperti itu dikumpulkan dari platform-platform bug bounty dan laporan-laporan
+yang tersedia secara publik. Hanya masalah-masalah yang dilaporkan antara 2019
 dan 2022 yang dipertimbangkan. Data ini dipakai untuk memberi tim suatu
 rasa tentang ke arah mana daftar top 10 sebelumnya mesti berkembang maupun
 untuk membantu menangani kemungkinan bias data yang dikontribusikan.
@@ -34,8 +34,8 @@ November 2022. Secara paralel, tim proyek memulai diskusi tentang apa yang
 telah berubah sejak 2019. Diskusi termasuk impak dari daftar pertama, umpan
 balik yang diterima dari komunitas, dan tren-tren baru dari keamanan API.
 
-Tim proyek mempromosikan rapat-rapat dengan para spesialis tengan ancaman-
-ancaman kemanan API yang relevan untuk mendapatkan insight ke bagaimana
+Tim proyek mempromosikan rapat-rapat dengan para spesialis tentang
+ancaman-ancaman kemanan API yang relevan untuk mendapatkan insight ke bagaimana
 korban terdampak dan bagaimana ancaman-ancaman itu dapat dimitigasi.
 
 Upaya ini menghasilkan suatu draf awal dari apa yang dipercaya oleh tim
